@@ -1,112 +1,135 @@
 def add(a, b):
-    """Add two numbers together
-
-    it's not magic, it's just a function that adds two numbers together
-
+    """
+    Add two numbers together!
+    
+    It's like counting on your fingers!
+    
     Args:
-        a: The first number to add
-        b: The second number to add
-
+        a (number): First number
+        b (number): Second number
+    
     Returns:
-        The sum of the two numbers
+        number: The sum of a and b
     
     Examples:
-        >>> add(1, 2)
-        3
-        """
+        >>> add(5, 3)
+        8
+        >>> add(10, 25)
+        35
+    """
     return a + b
-    
+
+
 def subtract(a, b):
-    """Subtract two numbers together
-
-    it's not magic, it's just a function that subtracts two numbers together
-
+    """
+    Subtract one number from another!
+    
+    Like taking away cookies!
+    
     Args:
-        a: The first number to subtract
-        b: The second number to subtract
-
+        a (number): Number to subtract from
+        b (number): Number to subtract
+    
     Returns:
-        The difference of the two numbers
+        number: The difference
     
     Examples:
-        >>> subtract(1, 2)
-        -1
-        """
+        >>> subtract(10, 3)
+        7
+        >>> subtract(50, 20)
+        30
+    """
     return a - b
-    
+
+
 def multiply(a, b):
-    """Multiply two numbers together
-
-    it's not magic, it's just a function that multiplies two numbers together
-
+    """
+    Multiply two numbers!
+    
+    Like repeated addition!
+    
     Args:
-        a: The first number to multiply
-        b: The second number to multiply
-
+        a (number): First number
+        b (number): Second number
+    
     Returns:
-        The product of the two numbers
+        number: The product
     
     Examples:
-        >>> multiply(1, 2)
-        2
-        """
+        >>> multiply(5, 3)
+        15
+        >>> multiply(7, 8)
+        56
+    """
     return a * b
-    
+
+
 def divide(a, b):
-    """Divide two numbers together
-
-    it's not magic, it's just a function that divides two numbers together
-
+    """
+    Divide one number by another!
+    
+    Like sharing cookies equally!
+    
     Args:
-        a: The first number to divide
-        b: The second number to divide
-
+        a (number): Number to divide
+        b (number): Number to divide by
+    
     Returns:
-        float: The quotient of the two numbers/ result of the division
+        float: The result
     
     Examples:
-        >>> divide(1, 2)
-        0.5
-        """
+        >>> divide(10, 2)
+        5.0
+        >>> divide(15, 3)
+        5.0
+    """
     if b == 0:
-        raise ValueError("Cannot divide by zero")
+        raise ValueError("Oops! Can't divide by zero! That's like trying to share cookies with nobody!")
     return a / b
 
+
 def average(numbers):
-    """Calculate the average of a list of numbers
-
-    it's not magic, it's just a function that calculates the average of a list of numbers
-
+    """
+    Find the average of a list of numbers!
+    
+    Like finding the middle score!
+    
     Args:
-        numbers: A list of numbers to calculate the average of
-
+        numbers (list): A list of numbers
+    
     Returns:
-        float: The average of the numbers
+        float: The average
     
     Examples:
-        >>> average([1, 2, 3, 4, 5])
-        3.0
+        >>> average([10, 20, 30])
+        20.0
+        >>> average([5, 10, 15, 20])
+        12.5
     """
     if len(numbers) == 0:
-        raise ValueError("Cannot calculate average of an empty list")
+        raise ValueError("Oops! Can't average an empty list!")
     return sum(numbers) / len(numbers)
 
+
 def power(a, b):
-        """Raise a number to the power of another number
+    """
+    Raise a number to a power!
+    
+    Like multiplying a number by itself!
+    
+    Args:
+        a (number): Base number
+        b (number): Power/exponent
+    
+    Returns:
+        number: a raised to the power of b
+    
+    Examples:
+        >>> power(2, 3)
+        8
+        >>> power(5, 2)
+        25
+    """
+    return a ** b 
 
-        it's not magic, it's just a function that raises a number to the power of another number
-
-        Args:
-            a: The number to raise
-            b: The power to raise the number to
-
-        Returns:
-          number: a raised to the power of b
-        
-        examples:
-            >>> power(2, 3)
-            8
-            """
-    return a ** b
-        
-        
+    
