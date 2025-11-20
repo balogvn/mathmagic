@@ -14,7 +14,7 @@ def add(a, b):
         >>> add(1, 2)
         3
         """
-        return a + b
+    return a + b
     
 def subtract(a, b):
     """Subtract two numbers together
@@ -32,7 +32,7 @@ def subtract(a, b):
         >>> subtract(1, 2)
         -1
         """
-        return a - b
+    return a - b
     
 def multiply(a, b):
     """Multiply two numbers together
@@ -50,7 +50,7 @@ def multiply(a, b):
         >>> multiply(1, 2)
         2
         """
-        return a * b
+    return a * b
     
 def divide(a, b):
     """Divide two numbers together
@@ -68,9 +68,9 @@ def divide(a, b):
         >>> divide(1, 2)
         0.5
         """
-        if b == 0:
-            raise ValueError("Cannot divide by zero")
-        return a / b
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
 
 def average(numbers):
     """Calculate the average of a list of numbers
@@ -107,6 +107,6 @@ def power(a, b):
             >>> power(2, 3)
             8
             """
-            return a ** b
+    return a ** b
         
         
